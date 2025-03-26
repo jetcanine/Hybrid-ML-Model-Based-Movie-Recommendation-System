@@ -1,6 +1,5 @@
 # Hybrid Movie Recommendation System
 
-## The Report has been uploaded in 'Assignment_6' Folder
 
 ## Features
 1. User authentication (login and registration)
@@ -43,26 +42,26 @@ Open your web browser and go to http://127.0.0.1:5001
 
 
 ## Database :
-![alt text](Images/image.png)
+![alt text](images/image.png)
 The session genre is activated when the user wants to change the genre during recommendation
 
-![alt text](Images/image1.png)
+![alt text](images/image1.png)
 The session genre gets discarded once the user logs out. The genre in that table is also either discarded or saved as permanat preference
 
 
 ## UI : 
 1. ## Login 
-![alt text](Images/image3.png)
+![alt text](images/image3.png)
 
 2. ## Recommendations
-![alt text](Images/image4.png)
+![alt text](images/image4.png)
 
 3. ## Updating Genre
-![alt text](Images/image5.png)
+![alt text](images/image5.png)
 
 4. ## Logout
-![alt text](Images/image6.png)
+![alt text](images/image6.png)
 
 ## Monitoring Dashboard :
 
-![alt text](Images/image7.png)
+![alt text](images/image7.png)
