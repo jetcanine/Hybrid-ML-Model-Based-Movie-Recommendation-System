@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card shadow">
+    <div class="card-body">
+        <h2 class="card-title mb-4">Login</h2>
+        <form method="POST">
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" name="username" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+
+        <div class="mt-3 text-center">
+            <span class="text-muted">New user? </span>
+            <a href="{{ url_for('register') }}" class="link-primary">Create account</a>
+        </div>
+    </div>
+</div>
+
+{% if errors %}
+<div class="alert alert-danger mb-4">
+    {% for error in errors %}
+    <div>{{ error }}</div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

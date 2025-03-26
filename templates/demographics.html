@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Step 1: Your Demographics</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <select class="form-select" name="gender" required>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input type="number" class="form-control" name="age" min="1" max="100" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Occupation</label>
+        <select class="form-select" name="occupation" required>
+            <option value="0">Other</option>
+            <option value="1">Academic/Educator</option>
+            <option value="2">Artist</option>
+            <option value="3">Clerical/Admin</option>
+            <!-- Add all occupation options from original code -->
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Next →</button>
+</form>
+{% endblock %}

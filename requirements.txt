@@ -1,0 +1,12 @@
+
+Flask
+huggingface-hub
+numpy
+pandas
+prometheus-client
+psutil
+pymongo
+requests
+scikit-learn
+tensorflow
+Werkzeug

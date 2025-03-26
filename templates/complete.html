@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h2> Recommendation Session Complete!</h2>
+    <p class="lead">Thank you for using our recommendation system.</p>
+    <a href="{{ url_for('login') }}" class="btn btn-primary">
+        Start New Session
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Step 2: Preferred Genres</h2>
+<form method="POST">
+    <div class="row">
+        {% for genre in genres %}
+        <div class="col-md-3 mb-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" 
+                       name="genres" value="{{ genre }}" id="{{ genre }}">
+                <label class="form-check-label" for="{{ genre }}">
+                    {{ genre }}
+                </label>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Start Recommendations →</button>
+</form>
+{% endblock %}

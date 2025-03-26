@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card shadow">
+    <div class="card-body text-center">
+        <h2 class="card-title mb-4">Save Genre Preferences?</h2>
+        <p class="lead">
+            Would you like to keep "{{ session.preferred_genres|join(', ') }}" 
+            as your permanent preferences?
+        </p>
+        
+        <div class="d-flex justify-content-center gap-3">
+            <!-- <form action="{{ url_for('logout') }}" method="GET"> -->
+            <form action="{{ url_for('complete') }}" method="GET">
+                <input type="hidden" name="save_changes" value="yes">
+                <button type="submit" class="btn btn-success px-4">Yes, Save</button>
+            </form>
+            
+            <!-- <form action="{{ url_for('logout') }}" method="GET"> -->
+            <form action="{{ url_for('complete') }}" method="GET">
+                <input type="hidden" name="save_changes" value="no">
+                <button type="submit" class="btn btn-outline-secondary px-4">No, Discard</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
